@@ -1,0 +1,20 @@
+= A spring boot webflux service with mongo DB on docker
+
+This is a quick spring boot webflux service starter kit with mongo DB. The MongoDB runs on the docker container and MongoDB Express (Web Admin UI) runs on the other docker container.
+
+== How to run
+
+[source,zsh]
+----
+./r.sh
+----
+
+
+== URL Entries
+
+|===
+|URL |Description
+|http://localhost:8001 |Netty web service URL
+|http://localhost:8089 |Mongo Express Web URL
+|===
+

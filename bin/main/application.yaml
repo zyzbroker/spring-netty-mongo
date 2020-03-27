@@ -1,0 +1,15 @@
+debug: true
+server:
+  port: 8001
+  compression:
+    enabled: true
+
+spring:
+  data:
+    mongodb:
+      username: "root"
+      password:
+        - example
+      host: "localhost"
+      port: 21701
+      database: "crm_support"

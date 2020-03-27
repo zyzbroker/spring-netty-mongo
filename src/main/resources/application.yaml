@@ -1,0 +1,22 @@
+debug: true
+server:
+  port: 8001
+  compression:
+    enabled: true
+
+spring:
+  data:
+    mongodb:
+      username: root
+      password:
+        - e
+        - x
+        - a
+        - m
+        - p
+        - l
+        - e
+      host: localhost
+      database: support
+      port: 27017
+      authentication-database: admin
