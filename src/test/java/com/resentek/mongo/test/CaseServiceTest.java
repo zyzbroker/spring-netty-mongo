@@ -3,6 +3,7 @@ package com.resentek.mongo.test;
 import com.resentek.mongo.service.CaseService;
 import com.resentek.mongo.test.config.TestConfig;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.slf4j.Logger;
@@ -31,5 +32,9 @@ public class CaseServiceTest {
         assertEquals(2, caseService.findAll().size(),"two cases are init");
     }
 
-
+    @Test
+    @DisplayName("each test method will verify init data again")
+    void testFindAll1() {
+        assertEquals(2, caseService.findAll().size(),"two cases are init");
+    }
 }

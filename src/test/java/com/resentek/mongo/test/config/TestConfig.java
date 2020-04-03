@@ -19,7 +19,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @Configuration
 @EnableMongoRepositories(basePackages = "com.resentek.mongo.repository")
 @ComponentScan(basePackages = {"com.resentek.mongo.service"})
-@PropertySource("classpath:db/mongo.yaml")
+@PropertySource("classpath:db/mongo.properties")
 public class TestConfig {
     @Value("${db.database}")
     private String dbName;
