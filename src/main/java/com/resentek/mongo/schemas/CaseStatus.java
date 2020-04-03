@@ -1,4 +1,4 @@
-package com.resentek.mongo.entities;
+package com.resentek.mongo.schemas;
 
 public enum CaseStatus {
     OPEN,

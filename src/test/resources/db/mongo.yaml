@@ -1,0 +1,6 @@
+db.auth.database=admin
+db.database=support_test
+db.host=127.0.0.1
+db.port=27017
+db.user=root
+db.password=example

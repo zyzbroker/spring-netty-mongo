@@ -1,5 +1,6 @@
 package com.resentek.mongo.entities;
 
+import com.resentek.mongo.schemas.CaseStatus;
 import org.springframework.data.annotation.Id;
 
 public class Case {

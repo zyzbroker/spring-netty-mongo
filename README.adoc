@@ -9,6 +9,10 @@ This is a quick spring boot webflux service starter kit with mongo DB. The Mongo
 ./r.sh
 ----
 
+== Test
+- run docker docker-compose up --detach
+- gradle clean test
+
 
 == URL Entries
 
