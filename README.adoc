@@ -22,3 +22,4 @@ This is a quick spring boot webflux service starter kit with mongo DB. The Mongo
 |http://localhost:8089 |Mongo Express Web URL
 |===
 
+== Kubernete Deployment
