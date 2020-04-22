@@ -31,4 +31,8 @@ public class CaseService {
     public List<Case> findAll() {
         return caseRepo.findAll();
     }
+
+    public void deleteAll() {
+        caseRepo.deleteAll();
+    }
 }

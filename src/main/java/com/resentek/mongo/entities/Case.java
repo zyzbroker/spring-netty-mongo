@@ -2,7 +2,9 @@ package com.resentek.mongo.entities;
 
 import com.resentek.mongo.schemas.CaseStatus;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document("cases")
 public class Case {
     @Id
     public String id;

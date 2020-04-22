@@ -42,6 +42,11 @@ public class TestConfig {
     public void setAuthDatabase(String db){
         this.authDatabase = db;
     }
+    private String replSet;
+    @Value("${db.replSet}")
+    public void setReplicationSet(String name) {
+        this.replSet = name;
+    }
 
     private final Logger logger = LoggerFactory.getLogger(TestConfig.class);
 

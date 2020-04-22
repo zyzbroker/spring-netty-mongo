@@ -1,9 +1,18 @@
 version: "3.7"
-services:
 
+volumes:
+  crm-support:
+    name: crm-support
+    external: false
+
+services:
   mongo:
     image: mongo:latest
     restart: always
+
+    volumes:
+      - crm-support:/data/db
+
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
@@ -12,7 +21,6 @@ services:
         published: 27017
         protocol: tcp
         mode: host
-
 
   mongo-express:
     image: mongo-express
@@ -26,3 +34,4 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+

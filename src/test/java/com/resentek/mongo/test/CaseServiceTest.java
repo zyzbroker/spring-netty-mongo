@@ -2,6 +2,7 @@ package com.resentek.mongo.test;
 
 import com.resentek.mongo.service.CaseService;
 import com.resentek.mongo.test.config.TestConfig;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -25,6 +26,12 @@ public class CaseServiceTest {
     void setupTestData() {
         log.info("---- setup test data ----");
         caseService.initData();
+    }
+
+    @AfterEach
+    void teardownData() {
+        log.info("---- delete test fata ----");
+        caseService.deleteAll();
     }
 
     @Test

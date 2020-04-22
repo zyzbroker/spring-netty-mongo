@@ -7,9 +7,16 @@ server:
 spring:
   data:
     mongodb:
-      username: "root"
+      username: root
       password:
-        - example
-      host: "localhost"
-      port: 21701
-      database: "crm_support"
+        - e
+        - x
+        - a
+        - m
+        - p
+        - l
+        - e
+      host: localhost
+      database: support
+      port: 27017
+      authentication-database: admin
